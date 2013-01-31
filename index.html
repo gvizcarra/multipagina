@@ -12,7 +12,7 @@
     $(document).ready(function(){
         $.ajax({
             type: "GET",
-            url: "http://10.6.0.130/gv/datos.php",
+            url: "http://soporte.da0.cfemex.com/appmovil.php?rpu=019061204876",
             dataType: "xml",
             success: xmlParser
         });
@@ -22,7 +22,7 @@
             xml = data;
 
             $('#load').fadeOut();
-            $('#load').refresh();
+           
 
             $(xml).find("Employee").each(function () {
             	$('#list').listview('refresh');
