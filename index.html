@@ -22,6 +22,7 @@
             xml = data;
 
             $('#load').fadeOut();
+            $('#load').refresh();
 
             $(xml).find("Employee").each(function () {
             	$('#list').listview('refresh');
