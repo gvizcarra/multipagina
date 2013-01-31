@@ -25,15 +25,15 @@
            
 
             $(xml).find("Employee").each(function () {
-            	$('#list').listview('refresh');
-                name = $(this).attr("name");
-                var email = $(this).find("email").text();
-                var jobtitle = $(this).find("jobtitle").text();
-                var address = $(this).find("address").text();
-                var workphone = $(this).find("workphone").text();
-                var homephone = $(this).find("homephone").text();
-                var cellphone = $(this).find("cellphone").text();
-                var fax = $(this).find("fax").text();
+            	//$('#list').listview('refresh');
+                name = $(this).attr("nombre");
+                var email = $(this).find("direccion").text();
+                var jobtitle = $(this).find("colonia").text();
+                var address = $(this).find("numcta").text();
+                var workphone = $(this).find("poblacion").text();
+                var homephone = $(this).find("mpio").text();
+                var cellphone = $(this).find("codigo_postal").text();
+                var fax = $(this).find("tipo_pob").text();
 
                 $("#list").append('<li><h3 id="name">' + name + '</h3><ul><li>Email: '+ email + '</li><li>Job Title: '+ jobtitle + '</li><li>Address: '+ address + '</li><li>Work Phone: '+ workphone + '</li><li>Home Phone: '+ homephone + '</li><li>Cell Phone: '+ cellphone + '</li><li>Fax: '+ fax + '</li></ul></li>');
 
